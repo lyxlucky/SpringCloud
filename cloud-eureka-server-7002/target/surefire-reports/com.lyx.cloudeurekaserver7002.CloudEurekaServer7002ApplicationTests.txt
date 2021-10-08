@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.lyx.cloudeurekaserver7002.CloudEurekaServer7002ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.809 s - in com.lyx.cloudeurekaserver7002.CloudEurekaServer7002ApplicationTests

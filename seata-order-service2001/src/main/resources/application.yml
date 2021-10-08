@@ -1,0 +1,28 @@
+server:
+  port: 2001
+spring:
+  application:
+    name: seata-order-service
+  datasource:
+    # 当前数据源操作类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    # mysql驱动类
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seata_order
+    username: root
+    password: 200265
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+feign:
+  hystrix:
+    enabled: false
+logging:
+  level:
+    io:
+      seata: info
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyx.dao.PaymentDao">
+
+    <resultMap id="BaseResultMap" type="com.lyx.entity.Payment">
+        <id property="id" column="id" jdbcType="BIGINT" javaType="Long"></id>
+        <result property="serial" column="serial" jdbcType="VARCHAR" javaType="String"></result>
+    </resultMap>
+
+    <select id="getPaymentById" resultMap="BaseResultMap" parameterType="Long">
+        select * from payment where id = #{id}
+    </select>
+    <insert id="add" keyProperty="id" useGeneratedKeys="true" parameterType="com.lyx.entity.Payment">
+        insert into payment(serial) values(#{serial})
+    </insert>
+</mapper>
