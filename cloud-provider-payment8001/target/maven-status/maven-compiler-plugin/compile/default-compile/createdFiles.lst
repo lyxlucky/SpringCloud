@@ -1,5 +1,0 @@
-com\lyx\services\Impl\PaymentServicesImpl.class
-com\PayMentMain.class
-com\lyx\services\PaymentServices.class
-com\lyx\dao\PaymentDao.class
-com\lyx\controller\PaymentController.class

@@ -54,4 +54,9 @@ public class PaymentController {
         return "hi i am paymentzipkin server fall back ";
     }
 
+    @DeleteMapping("/payment/test")
+    public String test(){
+        return serverPort;
+    }
+
 }

@@ -26,4 +26,9 @@ public class PaymentFeignController {
         return paymentFeignServices.getPaymentFeignTimeout();
     }
 
+    @GetMapping("test")
+    public String test(){
+        return paymentFeignServices.test();
+    }
+
 }
